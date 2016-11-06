@@ -84,7 +84,7 @@ public class MapMaker2D : EditorWindow {
 	//List with all layers
 	List<Layer> layers;
 
-	bool isInSceneWindow;
+
 
 	public int controlID;
 
@@ -302,7 +302,9 @@ public class MapMaker2D : EditorWindow {
 	void ActivateTools()
 	{
 		Tools.current = Tool.None;
+		if(gizmoTile!=null)
 		gizmoTile.SetActive (true);
+		if(gizmoCursor!=null)
 		gizmoCursor.SetActive (true);
 	}
 	//Updates with the scene
@@ -324,7 +326,7 @@ public class MapMaker2D : EditorWindow {
 
 	
 
-		isInSceneWindow = true;
+
 
 		//Creates Event
 		Event e = Event.current;
@@ -340,24 +342,24 @@ public class MapMaker2D : EditorWindow {
 		};
 
 		if(e.type==EventType.keyDown&&e.keyCode == KeyCode.Escape) {
-			ShowLog ("Keydown");
+			
 			holdingEscape = true;
 		}
 
 		if(e.type==EventType.MouseDown&&e.button == 1) {
-			ShowLog ("Keydown");
+			
 			holdingEscape = true;
 		}
 
 		if(e.type==EventType.MouseUp&&e.button == 1) {
-			ShowLog ("Keydown");
+			
 			holdingEscape = true;
 			switchTool = false;
 		}
 
 
 		if(e.type==EventType.keyUp&&e.keyCode == KeyCode.Escape) {
-			ShowLog ("Keyup");
+			
 			holdingEscape = false;
 
 			switchTool = false;
@@ -367,7 +369,7 @@ public class MapMaker2D : EditorWindow {
 			
 
 			activateTools = !activateTools;
-			ShowLog (activateTools);
+
 			if (activateTools) {
 				ActivateTools ();
 
@@ -375,7 +377,7 @@ public class MapMaker2D : EditorWindow {
 			} else
 				Tools.current = lasTool;
 
-			ShowLog ("escape");
+
 			switchTool = true;
 
 		}
@@ -1255,10 +1257,17 @@ public class MapMaker2D : EditorWindow {
 					int aux = layers [k].priority;
 					layers [k].priority= layers [k + 1].priority;
 					layers [k + 1].priority=aux;
+
 				}
 			}
 		}
 	
+
+		foreach (var item in layers) {
+
+
+			item.transform.position = Vector3.forward * layerDepthMultiplier * item.priority;
+		}
 
 		//CheckNameStuff
 		//Keep layer number in name
