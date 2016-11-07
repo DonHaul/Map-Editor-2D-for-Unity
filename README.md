@@ -12,7 +12,7 @@ Please check out the [releases](https://github.com/BazingoW/Map-Editor-2D-for-Un
 
 ## Tutorial
 
-In this video I show you the funtionalities of this tool
+In this [video](https://youtu.be/Rs8ogl2ntPw) I show you the funtionalities of this tool
 
 ## Bugs & Suggestions
 
