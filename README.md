@@ -8,7 +8,9 @@ This repository contains the source code of the project
 ## Functionalities
 
 This tool lets you insert and remove game object prefabs in paintbrush mode or area mode.
-Gameobjects are instantiated in a grid, but it is also possible to insert in the unsnapped mode
+
+Gameobjects are instantiated in a grid, but it is also possible to insert in the unsnapped mode.
+
 There is also layers that you can reorder on the go to make stuff appear behind on in front of other layers.
 
 ## Download
