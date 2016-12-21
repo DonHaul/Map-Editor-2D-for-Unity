@@ -1,24 +1,51 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class Layer : MonoBehaviour {
+public class Layer : MonoBehaviour
+{
+    #region Private Fields
 
-	public Layer(int l,int i)
-	{
-		id = i;
-		priority = l;
+    [SerializeField]
+    private int id;
 
-	}
+    [SerializeField]
+    private int priority;
 
-	public int id;
-	public int priority;
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    #endregion Private Fields
+
+    #region Public Constructors
+
+    /// <summary>
+    /// Constructor for the layer.
+    /// </summary>
+    /// <param name="priority">Priority of the layer</param>
+    /// <param name="id">ID of the layer</param>
+    public Layer(int priority, int id)
+    {
+        this.id = id;
+        this.priority = priority;
+    }
+
+    #endregion Public Constructors
+
+    #region Public Properties
+
+    /// <summary>
+    /// The id of the layer.
+    /// </summary>
+    public int ID
+    {
+        get { return id; }
+        set { id = value; }
+    }
+
+    /// <summary>
+    /// The priority of the layer.
+    /// </summary>
+    public int Priority
+    {
+        get { return priority; }
+        set { priority = value; }
+    }
+
+    #endregion Public Properties
 }
