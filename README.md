@@ -3,7 +3,7 @@
 The MapEditor 2D is a simple tools that solves one of the big issues of unity, creating 2D tiled maps.
 
 
-This repository contains the source code of the project
+This repository used to contain the source code of the project
 
 ## Functionalities
 
@@ -15,8 +15,8 @@ There is also layers that you can reorder on the go to make stuff appear behind 
 
 ## Download
 
-Right now this plugin cannot be downloaded throught the Unity Asset store.
-Please check out the [releases](https://github.com/BazingoW/Map-Editor-2D-for-Unity/releases) for the latest version of the tool.
+Right now this plugin can be downloaded throught the Unity Asset store.
+Please check out the [releases](https://assetstore.unity.com/packages/tools/sprite-management/map-maker-2d-76253) for the latest version of the tool.
 
 ## Tutorial
 
