@@ -34,7 +34,7 @@ Just in case you want to donate: http://bit.ly/2ibVDTX
 
 
 
-##Licensing
+## Licensing
 
 Licensed Under the [MIT License](LICENSE).
 
