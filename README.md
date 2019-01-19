@@ -15,7 +15,7 @@ There is also layers that you can reorder on the go to make stuff appear behind 
 
 ## Download
 
-Right now this plugin can be downloaded throught the Unity Asset store.
+Right now this plugin can be downloaded throught the Unity Asset store (http://u3d.as/DSY) or throught the releases (https://github.com/BazingoW/Map-Editor-2D-for-Unity/releases).
 Please check out the [releases](https://assetstore.unity.com/packages/tools/sprite-management/map-maker-2d-76253) for the latest version of the tool.
 
 ## Tutorial
